@@ -1,6 +1,6 @@
 class EntryPage extends HTMLElement {
   constructor() {
-    super();
+    super(); 
 
     const template = document.createElement('template');
 

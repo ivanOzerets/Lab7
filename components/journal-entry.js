@@ -102,7 +102,7 @@ class JournalEntry extends HTMLElement {
     }
     if (entry.audio) {
       let entryAudio = document.createElement('audio');
-      entryAudio.classList.add('entry-audio');
+      entryAudio.classList.add('entry-audio'); 
       entryAudio.src = entry.audio;
       entryAudio.controls = true;
       this.shadowRoot.querySelector('.entry').appendChild(entryAudio);

@@ -39,7 +39,7 @@ router.setState = function(state, mainURL, settingsURL) {
 
    console.log("We're in setState");
    console.log("Before, you have " + history.length + " pages in the history.");
-   console.log("history.state is " + history.state);
+   console.log("history.state is " + history.state); 
 
    var body = document.body;
    var header = document.getElementsByTagName('h1')[0];
