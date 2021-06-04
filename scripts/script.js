@@ -21,12 +21,12 @@ setState("main",mainURL,settingsURL);
 //Register
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('../sw.js').then(function(registration) {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
       // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      //console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function(err) {
       // registration failed :(
-      console.log('ServiceWorker registration failed: ', err); 
+      //console.log('ServiceWorker registration failed: ', err); 
     });
   });
 }
@@ -74,9 +74,9 @@ header.addEventListener("click", function() {
 });
 
 window.onpopstate = function(event) {
-  console.log("THIS WILL SHOW THE TRUTH INSIDE ONPOPSTATE history.state= " + history.state);
+  //console.log("THIS WILL SHOW THE TRUTH INSIDE ONPOPSTATE history.state= " + history.state);
 
-  console.log(history);
+  //console.log(history);
   
   //  if (history.length <= 2) {
   //    return;
@@ -85,8 +85,8 @@ window.onpopstate = function(event) {
   //console.log("we're in popstate");
   //console.log("currentState is " + currentState);
   //console.log("Event.state is " + event.state);
-  console.log("WHAT EVEN IS THIS? event.state is " +  event.state.view);
-  console.log("WHY IN THE WORLD WOULD THIS CHANGE? history.state is " +  history.state);
+  //console.log("WHAT EVEN IS THIS? event.state is " +  event.state.view);
+  //console.log("WHY IN THE WORLD WOULD THIS CHANGE? history.state is " +  history.state);
 
   
   setState(event.state, mainURL, settingsURL);
