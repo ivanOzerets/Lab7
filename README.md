@@ -1,6 +1,6 @@
 # Lab7_Solution
 
-## Lab Partners:
+##Lab Partners:
 
 Ivan Ozerets
 
