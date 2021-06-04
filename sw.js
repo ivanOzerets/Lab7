@@ -38,13 +38,13 @@ self.addEventListener('activate', event => {
 
 
 self.addEventListener('fetch', function(event) {
-    console.log(event.request);
+    //console.log(event.request);
     event.respondWith(
         
       caches.match(event.request)
         .then(function(response) {
           // Cache hit - return response
-          console.log('Caches match triggerred');
+          //console.log('Caches match triggerred');
           if (response) {
             return response;
           }
